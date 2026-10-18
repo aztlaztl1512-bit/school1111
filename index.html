@@ -3,154 +3,223 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>اختبار التميز في القدرات - أ/ عبدالعزيز الفيفي</title>
+    <title>ورقة عمل تفاعلية - الحذف والزيادة في الإملاء</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
     <style>
-        :root { --primary: #2c3e50; --accent: #d4af37; --blue: #3498db; --success: #27ae60; --danger: #e74c3c; --bg: #f4f7f6; }
-        body { font-family: 'Segoe UI', Tahoma, sans-serif; background: var(--bg); display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; padding: 20px; }
-        .quiz-container { background: white; width: 100%; max-width: 800px; padding: 30px; border-radius: 25px; box-shadow: 0 15px 35px rgba(0,0,0,0.15); border-top: 10px solid var(--primary); position: relative; }
-        .header-info { text-align: right; margin-bottom: 25px; padding: 15px; background: #fdfcf0; border-radius: 15px; border-right: 6px solid var(--accent); }
-        .teacher-name { color: #b8860b; font-size: 1.3rem; font-weight: 900; }
-        .timer-circle { width: 55px; height: 55px; border-radius: 50%; border: 4px solid var(--blue); display: flex; align-items: center; justify-content: center; font-weight: bold; position: absolute; left: 30px; top: 30px; color: var(--blue); background: white; }
-        .reading-passage { background: #fffde7; padding: 20px; border-radius: 15px; border: 1px solid #ffe082; margin-bottom: 20px; line-height: 1.8; font-size: 1.1rem; text-align: justify; max-height: 250px; overflow-y: auto; color: #444; }
-        .question-text { font-size: 1.4rem; margin: 20px 0; font-weight: bold; color: var(--primary); text-align: center; }
-        .option { border: 2px solid #eee; padding: 15px; margin: 10px 0; border-radius: 12px; cursor: pointer; transition: 0.2s; text-align: right; font-size: 1.1rem; }
-        .option:hover { border-color: var(--blue); background: #f0faff; }
-        .review-table { width: 100%; border-collapse: collapse; margin-top: 20px; font-size: 0.95rem; }
-        .review-table th, .review-table td { border: 1px solid #ddd; padding: 10px; text-align: right; }
-        .review-table th { background-color: var(--primary); color: white; }
-        .status-ok { color: var(--success); font-weight: bold; }
-        .status-err { color: var(--danger); font-weight: bold; }
-        .hidden { display: none; }
-        button { background: var(--blue); color: white; border: none; padding: 15px; border-radius: 10px; font-size: 1.2rem; cursor: pointer; width: 100%; font-weight: bold; }
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #f0f4f8;
+        }
+        .del-highlight {
+            color: #e11d48;
+            background-color: #ffe4e6;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: bold;
+            text-decoration: line-through;
+        }
+        .add-highlight {
+            color: #16a34a;
+            background-color: #dcfce7;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        .option-card {
+            transition: all 0.2s ease-in-out;
+            cursor: pointer;
+        }
+        .option-card:hover {
+            transform: translateY(-2px);
+        }
     </style>
 </head>
-<body>
+<body class="p-3 md:p-6 text-slate-800 pb-28">
 
-<div class="quiz-container">
-    <div id="start-screen">
-        <div class="header-info">
-            <div class="teacher-name">👨‍🏫 أ / عبدالعزيز الفيفي</div>
-            <div style="color: var(--blue); font-weight: bold;">🏫 ثانوية الأمير عبدالمجيد</div>
+    <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden border border-slate-200">
+        
+        <!-- Header -->
+        <div class="bg-gradient-to-r from-slate-800 via-teal-900 to-slate-800 text-white p-6 text-center shadow-md">
+            <h1 class="text-2xl md:text-3xl font-extrabold mb-3 tracking-wide">ورقة عمل تفاعلية: الحذف والزيادة في الإملاء</h1>
+            <div class="inline-block bg-white/10 backdrop-blur-md px-5 py-2 rounded-full border border-white/20 text-sm font-medium">
+                إعداد: أ. عبدالعزيز الفيفي | ثانوية الأمير عبدالمجيد
+            </div>
         </div>
-        <h2 style="text-align: center; color: var(--primary);">📝 اختبار تجميعات لفظي 2026/04/07</h2>
-        <p style="text-align: center; color: #666;">لديك <strong>60 ثانية</strong> لكل سؤال ⏱️</p>
-        <input type="text" id="student-name" placeholder="أدخل اسمك الثلاثي للمتابعة ✏️" style="width:100%; padding:15px; border-radius:10px; border:2px solid #ddd; text-align:center; margin-bottom:20px; box-sizing: border-box;">
-        <button onclick="startQuiz()">ابدأ التحدي الآن 🚀</button>
+
+        <div class="p-4 md:p-8 space-y-8">
+            
+            <!-- Instruction Banner -->
+            <div class="bg-amber-50 border-r-4 border-amber-500 p-4 rounded-l-lg text-amber-900 text-sm md:text-base leading-relaxed shadow-sm">
+                📌 <strong>تعليمات:</strong> اختر الإجابة الصحيحة لكل سؤال. ستظهر لك التغذية الراجعة فورية وتوضح الحروف المحذوفة أو المزيدة بعد الإجابة مباشرة.
+            </div>
+
+            <!-- Quiz Form Container -->
+            <form id="quiz-form" class="space-y-8">
+                
+                <!-- Section 1: Deletion -->
+                <div class="space-y-6">
+                    <div class="flex items-center gap-3 border-b-2 border-teal-600 pb-2">
+                        <span class="bg-teal-600 text-white text-sm font-bold px-3 py-1 rounded-md">الجزء الأول</span>
+                        <h2 class="text-xl font-bold text-teal-900">أولاً: الحذف الإملائي</h2>
+                    </div>
+
+                    <!-- Question 1 -->
+                    <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 shadow-sm space-y-4" id="q1-box">
+                        <p class="font-bold text-base md:text-lg text-slate-800">1. أي الكلمات التالية حُذفت منها الألف خطاً لا لفظاً؟</p>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+                            <label class="option-card bg-white p-3 rounded-lg border border-slate-300 flex items-center gap-3 hover:border-teal-500">
+                                <input type="radio" name="q1" value="0" class="accent-teal-600 w-4 h-4" onclick="evaluateQ(1, 0, false)">
+                                <span>أ) القلم</span>
+                            </label>
+                            <label class="option-card bg-white p-3 rounded-lg border border-slate-300 flex items-center gap-3 hover:border-teal-500">
+                                <input type="radio" name="q1" value="1" class="accent-teal-600 w-4 h-4" onclick="evaluateQ(1, 1, true)">
+                                <span>ب) الرحمن</span>
+                            </label>
+                            <label class="option-card bg-white p-3 rounded-lg border border-slate-300 flex items-center gap-3 hover:border-teal-500">
+                                <input type="radio" name="q1" value="2" class="accent-teal-600 w-4 h-4" onclick="evaluateQ(1, 2, false)">
+                                <span>ج) قاضٍ</span>
+                            </label>
+                        </div>
+                        <div id="fb-1" class="hidden p-4 rounded-lg text-sm md:text-base leading-relaxed"></div>
+                    </div>
+
+                    <!-- Question 2 -->
+                    <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 shadow-sm space-y-4" id="q2-box">
+                        <p class="font-bold text-base md:text-lg text-slate-800">2. حدد الكتابة الصحيحة لكلمة (لغة) عند دخول لام الجر عليها:</p>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+                            <label class="option-card bg-white p-3 rounded-lg border border-slate-300 flex items-center gap-3 hover:border-teal-500">
+                                <input type="radio" name="q2" value="0" class="accent-teal-600 w-4 h-4" onclick="evaluateQ(2, 0, false)">
+                                <span>أ) للغة (بحذف همزة الوصل فقط)</span>
+                            </label>
+                            <label class="option-card bg-white p-3 rounded-lg border border-slate-300 flex items-center gap-3 hover:border-teal-500">
+                                <input type="radio" name="q2" value="1" class="accent-teal-600 w-4 h-4" onclick="evaluateQ(2, 1, true)">
+                                <span>ب) للغة (بحذف ال كاملة)</span>
+                            </label>
+                            <label class="option-card bg-white p-3 rounded-lg border border-slate-300 flex items-center gap-3 hover:border-teal-500">
+                                <input type="radio" name="q2" value="2" class="accent-teal-600 w-4 h-4" onclick="evaluateQ(2, 2, false)">
+                                <span>ج) الللغة</span>
+                            </label>
+                        </div>
+                        <div id="fb-2" class="hidden p-4 rounded-lg text-sm md:text-base leading-relaxed"></div>
+                    </div>
+                </div>
+
+                <!-- Section 2: Addition -->
+                <div class="space-y-6 pt-4">
+                    <div class="flex items-center gap-3 border-b-2 border-emerald-600 pb-2">
+                        <span class="bg-emerald-600 text-white text-sm font-bold px-3 py-1 rounded-md">الجزء الثاني</span>
+                        <h2 class="text-xl font-bold text-emerald-900">ثانياً: الزيادة الإملائية</h2>
+                    </div>
+
+                    <!-- Question 3 -->
+                    <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 shadow-sm space-y-4" id="q3-box">
+                        <p class="font-bold text-base md:text-lg text-slate-800">3. ما السبب في زيادة الألف الفارقة في كلمة (عملوا)؟</p>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+                            <label class="option-card bg-white p-3 rounded-lg border border-slate-300 flex items-center gap-3 hover:border-emerald-500">
+                                <input type="radio" name="q3" value="0" class="accent-emerald-600 w-4 h-4" onclick="evaluateQ(3, 0, false)">
+                                <span>أ) لأنها واو العلة الأصلية</span>
+                            </label>
+                            <label class="option-card bg-white p-3 rounded-lg border border-slate-300 flex items-center gap-3 hover:border-emerald-500">
+                                <input type="radio" name="q3" value="1" class="accent-emerald-600 w-4 h-4" onclick="evaluateQ(3, 1, true)">
+                                <span>ب) للتفريق بين واو الجماعة والواو الأصلية</span>
+                            </label>
+                            <label class="option-card bg-white p-3 rounded-lg border border-slate-300 flex items-center gap-3 hover:border-emerald-500">
+                                <input type="radio" name="q3" value="2" class="accent-emerald-600 w-4 h-4" onclick="evaluateQ(3, 2, false)">
+                                <span>ج) لأنها واو جمع المذكر السالم</span>
+                            </label>
+                        </div>
+                        <div id="fb-3" class="hidden p-4 rounded-lg text-sm md:text-base leading-relaxed"></div>
+                    </div>
+
+                    <!-- Question 4 -->
+                    <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 shadow-sm space-y-4" id="q4-box">
+                        <p class="font-bold text-base md:text-lg text-slate-800">4. الكلمة التي زِيدت فيها الواو خطاً لا لفظاً هي:</p>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+                            <label class="option-card bg-white p-3 rounded-lg border border-slate-300 flex items-center gap-3 hover:border-emerald-500">
+                                <input type="radio" name="q4" value="0" class="accent-emerald-600 w-4 h-4" onclick="evaluateQ(4, 0, true)">
+                                <span>أ) عمرو</span>
+                            </label>
+                            <label class="option-card bg-white p-3 rounded-lg border border-slate-300 flex items-center gap-3 hover:border-emerald-500">
+                                <input type="radio" name="q4" value="1" class="accent-emerald-600 w-4 h-4" onclick="evaluateQ(4, 1, false)">
+                                <span>ب) يدعو</span>
+                            </label>
+                            <label class="option-card bg-white p-3 rounded-lg border border-slate-300 flex items-center gap-3 hover:border-emerald-500">
+                                <input type="radio" name="q4" value="2" class="accent-emerald-600 w-4 h-4" onclick="evaluateQ(4, 2, false)">
+                                <span>ج) معلمو</span>
+                            </label>
+                        </div>
+                        <div id="fb-4" class="hidden p-4 rounded-lg text-sm md:text-base leading-relaxed"></div>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+
+        <div class="p-4 bg-slate-100 border-t border-slate-200 text-center text-xs text-slate-500">
+            جميع الحقوق محفوظة © ثانوية الأمير عبدالمجيد - أ. عبدالعزيز الفيفي
+        </div>
     </div>
 
-    <div id="game-screen" class="hidden">
-        <div class="timer-circle" id="timer">60</div>
-        <div id="passage-container" class="reading-passage hidden">
-            <strong>📖 قطعة الإنفلونزا:</strong><br>
-            (1) الإنفلونزا الموسمية عدوى فيروسية حادة تنتشر بسهولة... وبدأ ظهورها في القرن العشرين. [cite: 501] تسببت في وقوع أوبئة سنوية تبلغ ذروتها خلال فصل الشتاء في المناطق المعتدلة المناخ. [cite: 503] (3) على الصعيد العالمي تحدث الإصابة بمعدل يتراوح بين 5-10% بين البالغين و20-30% بين الأطفال. [cite: 516] (4) تقديرات البحوث تدل على نسبة عالية من وفيات الأطفال في البلدان النامية لعدم قدرتها على متابعة الفيروس. [cite: 519] (5) التطعيم هو أنجح الوسائل للوقاية... كما يجب تجنب الزحام وعزل كبار السن في تقلبات الجو. [cite: 520]
+    <!-- Sticky Score Bar -->
+    <div class="fixed bottom-0 left-0 right-0 bg-slate-900 text-white p-4 shadow-2xl border-t border-slate-700 flex justify-between items-center max-w-4xl mx-auto rounded-t-xl z-50">
+        <div class="text-sm md:text-lg font-bold">
+            النتيجة: <span id="score-text" class="text-teal-400">0</span> من <span id="total-text">4</span>
         </div>
-        <div id="question-info" style="text-align:center; font-weight:bold; color:#7f8c8d; margin-top:10px;"></div>
-        <div class="question-text" id="question"></div>
-        <div id="options"></div>
-    </div>
-
-    <div id="result-screen" class="hidden">
-        <h2 style="text-align: center; color: var(--primary);">📊 تقرير الأداء النهائي</h2>
-        <div id="final-score" style="font-size: 3rem; text-align: center; color: var(--blue); font-weight: 900; margin-bottom: 20px;"></div>
-        <div id="review-area"></div>
-        <div style="text-align: center; margin-top: 30px; font-weight: bold; color: var(--accent); border-top: 2px solid #eee; padding-top: 20px;">
-            ✨ أ / عبد العزيز الفيفي - ثانوية الأمير عبدالمجيد 🎓
+        <div class="text-sm md:text-lg font-bold">
+            النسبة المئوية: <span id="percent-text" class="text-amber-400">0%</span>
         </div>
     </div>
-</div>
 
 <script>
-    const questions = [
-        { q: "انتصار : عراك", opts: ["أ) تعاون : تكاتف", "ب) حوار : إقناع", "ج) تربية : تنشئة", "د) شراء : تفاوض"], c: 1 }, // [cite: 16]
-        { q: "صالح : طالح", opts: ["أ) فظاظة : لين", "ب) حشرة : نحلة", "ج) سيارة : محرك", "د) محبة : كره"], c: 0 }, // [cite: 32]
-        { q: "جحر : عرين", opts: ["أ) إسطبل : حظيرة", "ب) جبل : قمة", "ج) نهر : شاطئ", "د) بيت : أثاث"], c: 0 }, // [cite: 66]
-        { q: "كتاب : قراءة", opts: ["أ) فواكه : أكل", "ب) قلم : تعبير", "ج) طائرة : إقلاع", "د) كتاب : دفاتر"], c: 0 }, // [cite: 85]
-        { q: "بناء : رخصة", opts: ["أ) جراحة : تخدير", "ب) هدم : عمارة", "ج) جواز : سفر", "د) دراسة : شهادة"], c: 0 }, // [cite: 105]
-        { q: "طبيب : ممرض", opts: ["أ) مدير : معلم", "ب) مهندس : عامل", "ج) طالب : كتاب", "د) دفتر : كتاب"], c: 0 }, // [cite: 117]
-        { q: "مقتصد : مسرف", opts: ["أ) شهم : وغد", "ب) منتهز : مفرط", "ج) ليل : نوم", "د) نهار : عمل"], c: 1 }, // [cite: 145]
-        { q: "معجم : موسوعة", opts: ["أ) قارة : دولة", "ب) مدرسة : جامعة", "ج) عالم : باحث", "د) علوم : فيزياء"], c: 1 }, // [cite: 162]
-        { q: "الفم : طعام", opts: ["أ) النخلة : ساق", "ب) جذع : شجرة", "ج) البحر : سمك", "د) دماغ : رأس"], c: 2 }, // [cite: 181]
-        { q: "عجبي لرجال أجسامهم تنمو وعقولهم ........", opts: ["أ) تضعف - تهزل", "ب) تنمو - تنضج", "ج) تنمو - تصغر", "د) تكبر - تنمو"], c: 2 }, // [cite: 194]
-        { q: "عدو الرجل ........ وصديقه ........", opts: ["أ) حمقه - عقله", "ب) قلبه - ماله", "ج) ماله - قلبه", "د) صمته - كلامه"], c: 0 }, // [cite: 218]
-        { q: "المعلم ........ ينسجم الطلاب معه.", opts: ["أ) الحكيم - يتململون", "ب) الفصيح - ينسجمون", "ج) البليغ - يتشاجرون", "د) الضعيف - يختلطون"], c: 1 }, // [cite: 244]
-        { q: "قل عن نفسك ما تحب يقول الناس عنك ما ........", opts: ["أ) تحب - تكره", "ب) تعرف - تجهل", "ج) تريد - يغضب", "د) تشاهد - يسمعون"], c: 0 }, // [cite: 265]
-        { q: "اتبع ........ العدو فهي ترشدك إليهم.", opts: ["أ) سهام", "ب) أخبار", "ج) أفكار", "د) خطط"], c: 0 }, // [cite: 295]
-        { q: "الراحة كالسراب كلما اقتربت منها (اقتربت) ولا نصل إليها إلا في الآخرة.", opts: ["أ) الراحة", "ب) اقتربت الأولى", "ج) اقتربت الثانية", "د) الآخرة"], c: 2 }, // [cite: 315]
-        { q: "السلامة خير من الندامة والأسى خير من التكلف والقناعة خير من الضراعة.", opts: ["أ) السامة", "ب) الأسى", "ج) التكلف", "د) القناعة"], c: 1 }, // [cite: 335]
-        { q: "الحق والباطل متناقضان لا يجتمعان وبينهما (تماثل) كبير.", opts: ["أ) الباطل", "ب) متناقضان", "ج) تماثل", "د) كبير"], c: 2 }, // [cite: 354]
-        { q: "أن (تسيء) إلى من أساء إليك وتعطي من حرمك سيعلم الناس كرم أخلاقك.", opts: ["أ) تسيء", "ب) إليك", "ج) كرم", "د) أخلاقك"], c: 0 }, // [cite: 372]
-        { q: "من أفضل وسائل التعليم القراءة، وهي قراءة الكلمات المكتوبة بغرض (حفظها).", opts: ["أ) وسائل", "ب) القراءة", "ج) الكلمات", "د) حفظها"], c: 3 }, // [cite: 390]
-        { q: "يظن الصغير أن السعادة في (البذل) ثم يكبر ويكتشف أن السعادة في العطاء.", opts: ["أ) الصغير", "ب) البذل", "ج) يكبر", "د) السعادة"], c: 1 }, // [cite: 408]
-        { q: "مشاهدة التلفاز أثناء الطعام يزيد تناوله ويزيد من (تفاعل) الطفل مع أسرته.", opts: ["أ) أثناء", "ب) الطعام", "ج) تفاعل", "د) أسرته"], c: 2 }, // [cite: 429]
-        { q: "لا تدخر ما تبقى بعد (الاقتصاد)، بل أنفق ما تبقى بعد الادخار.", opts: ["أ) تدخر", "ب) الاقتصاد", "ج) أنفق", "د) الادخار"], c: 1 }, // [cite: 450]
-        { q: "اختر المفردة الشاذة:", opts: ["أ) العمرة", "ب) الصلاة", "ج) الزكاة", "د) الدعاء"], c: 3 }, // [cite: 470]
-        { q: "اختر المفردة الشاذة:", opts: ["أ) الاضطباع", "ب) التلفع", "ج) السدل", "د) الاضطجاع"], c: 3 }, // [cite: 490]
-        { q: "نسبة إصابة البالغين إلى الأطفال وفقاً للفقرة (3):", opts: ["أ) 2:4", "ب) 2:6", "ج) 2:5", "د) 2:8"], c: 2, isP: true }, // [cite: 542]
-        { q: "كم تمثل نسبة الإصابة بالإنفلونزا لدى البالغين؟", opts: ["أ) 4%", "ب) 5%", "ج) 6%", "د) 10%"], c: 3, isP: true }, // [cite: 564]
-        { q: "الدول التي لا يمكنها تغيير اللقاح باستمرار (فقرة 4) هي:", opts: ["أ) الدول المتطورة", "ب) الدول الفقيرة", "ج) الدول المتقدمة", "د) دول العالم الأول"], c: 1, isP: true }, // [cite: 581]
-        { q: "تقلب الجو مع مخالطة المصابين يؤدي إلى:", opts: ["أ) الإصابة بالسعال", "ب) ارتفاع الحرارة", "ج) انتعاش الفيروس", "د) الإصابة بالإنفلونزا"], c: 3, isP: true }, // [cite: 603]
-        { q: "مخالطة المصاب لمجموعة غير مصابة (فقرة 5) يؤدي إلى:", opts: ["أ) حضانة الفيروس", "ب) انتقال الفيروس", "ج) إضعاف الفيروس", "د) اكتشاف الفيروس"], c: 1, isP: true }, // [cite: 618]
-        { q: "الفقرة الثانية بالنسبة للفقرة الأولى:", opts: ["أ) ترسيخ لما ورد فيها", "ب) تأكيد لما ورد فيها", "ج) تحليل لمحتواها", "د) نتيجة لها"], c: 1, isP: true } // [cite: 634]
-    ];
+    const feedbackInfo = {
+        1: {
+            correct: "إجابة صحيحة! كلمة (الرحمـ<span class='del-highlight'>ا</span>ن) حُذفت منها الألف خطاً وبقيت لفظاً.",
+            incorrect: "إجابة خاطئة! الصواب هو (الرحمن)، أصلها اللفظي (الرحمـ<span class='del-highlight'>ا</span>ن) وتُكتب بدون ألف."
+        },
+        2: {
+            correct: "إجابة صحيحة! الكلمة المبدوءة بـ (ل) عند دخول لام الجر عليها تُحذف منها (ال) كاملة فتصبح (<span class='del-highlight'>الـ</span>لغة ⬅️ للغة).",
+            incorrect: "إجابة خاطئة! نظراً لأن الكلمة تبدأ بلام، تُحذف (ال) بالكامل تجنباً لاجتماع ثلاث لامات."
+        },
+        3: {
+            correct: "إجابة صحيحة! الألف الفارقة تُزاد بعد واو الجماعة (عملـو<span class='add-highlight'>ا</span>) للتفريق بينها وبين الواو الأصلية.",
+            incorrect: "إجابة خاطئة! الألف الفارقة تُكتب بعد واو الجماعة لتفريقها عن واو الفعل الأصلية."
+        },
+        4: {
+            correct: "إجابة صحيحة! تُزاد الواو في كلمة (عمـر<span class='add-highlight'>و</span>) في حالتي الرفع والجر للتفريق بينها وبين (عُمَر).",
+            incorrect: "إجابة خاطئة! الصواب هو (عمرو)، فالواو فيها زائدة خطاً لا لفظاً."
+        }
+    };
 
-    let current = 0, score = 0, name = "", timeLeft = 60, timerInterval, userLog = [];
+    let userAnswers = {};
 
-    function startQuiz() {
-        name = document.getElementById('student-name').value;
-        if(name.trim().length < 4) return alert("فضلاً أدخل اسمك الثلاثي ✨");
-        document.getElementById('start-screen').classList.add('hidden');
-        document.getElementById('game-screen').classList.remove('hidden');
-        showQuestion();
+    function evaluateQ(qNum, optIndex, isCorrect) {
+        const fbDiv = document.getElementById(`fb-${qNum}`);
+        userAnswers[qNum] = isCorrect ? 1 : 0;
+
+        if (isCorrect) {
+            fbDiv.className = "p-4 rounded-lg text-sm md:text-base leading-relaxed bg-emerald-50 border border-emerald-200 text-emerald-900";
+            fbDiv.innerHTML = feedbackInfo[qNum].correct;
+        } else {
+            fbDiv.className = "p-4 rounded-lg text-sm md:text-base leading-relaxed bg-rose-50 border border-rose-200 text-rose-900";
+            fbDiv.innerHTML = feedbackInfo[qNum].incorrect;
+        }
+
+        fbDiv.classList.remove("hidden");
+        recalculateScore();
     }
 
-    function showQuestion() {
-        clearInterval(timerInterval);
-        timeLeft = 60; 
-        document.getElementById('timer').innerText = timeLeft;
-        timerInterval = setInterval(() => { timeLeft--; document.getElementById('timer').innerText = timeLeft; if(timeLeft <= 0) next(-1); }, 1000);
+    function recalculateScore() {
+        const total = Object.keys(feedbackInfo).length;
+        const score = Object.values(userAnswers).reduce((a, b) => a + b, 0);
+        const percent = Math.round((score / total) * 100);
 
-        const q = questions[current];
-        document.getElementById('question-info').innerText = `السؤال ${current + 1} من ${questions.length}`;
-        const passage = document.getElementById('passage-container');
-        if(q.isP) passage.classList.remove('hidden'); else passage.classList.add('hidden');
-
-        document.getElementById('question').innerText = q.q;
-        const container = document.getElementById('options');
-        container.innerHTML = '';
-        q.opts.forEach((opt, i) => {
-            const div = document.createElement('div');
-            div.className = 'option';
-            div.innerText = opt;
-            div.onclick = () => next(i);
-            container.appendChild(div);
-        });
-    }
-
-    function next(idx) {
-        userLog.push(idx);
-        if(idx === questions[current].c) score++;
-        current++;
-        if(current < questions.length) showQuestion(); else finish();
-    }
-
-    function finish() {
-        clearInterval(timerInterval);
-        document.getElementById('game-screen').classList.add('hidden');
-        document.getElementById('result-screen').classList.remove('hidden');
-        document.getElementById('final-score').innerText = `${score} / ${questions.length}`;
-        
-        let table = `<table class="review-table"><tr><th>السؤال</th><th>إجابتك</th><th>النتيجة</th></tr>`;
-        questions.forEach((q, i) => {
-            const ok = userLog[i] === q.c;
-            table += `<tr>
-                <td>${q.q}</td>
-                <td class="${ok ? 'status-ok' : 'status-err'}">${userLog[i] === -1 ? 'انتهى الوقت' : q.opts[userLog[i]]}</td>
-                <td>${ok ? '✅ صحيح' : '❌ الإجابة: ' + q.opts[q.c]}</td>
-            </tr>`;
-        });
-        table += `</table>`;
-        document.getElementById('review-area').innerHTML = table;
+        document.getElementById("score-text").innerText = score;
+        document.getElementById("total-text").innerText = total;
+        document.getElementById("percent-text").innerText = `${percent}%`;
     }
 </script>
+
 </body>
 </html>
