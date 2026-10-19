@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ورقة عمل تفاعلية - الحذف والزيادة في الإملاء</title>
+    <title>حقيبة القواعد الإملائية - مواضع الحذف والزيادة والتدريبات التفاعلية</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
     <style>
@@ -37,31 +37,186 @@
 </head>
 <body class="p-3 md:p-6 text-slate-800 pb-28">
 
-    <!-- Container -->
+    <!-- Main Container -->
     <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden border border-slate-200">
         
-        <!-- Header -->
+        <!-- Main Header -->
         <div class="bg-gradient-to-r from-slate-800 via-teal-900 to-slate-800 text-white p-6 md:p-8 text-center relative border-b-4 border-amber-500">
-            <h1 class="text-2xl md:text-3xl font-extrabold mb-3 tracking-wide">ورقة عمل تفاعلية: الحذف والزيادة في الإملاء</h1>
+            <h1 class="text-2xl md:text-3xl font-extrabold mb-3 tracking-wide">حقيبة القواعد الإملائية الشاملة</h1>
+            <p class="text-amber-300 font-semibold mb-3">مواضع الحذف والزيادة الـ 13 والتدريبات التطبيقية الـ 30</p>
             <div class="inline-block bg-white/10 backdrop-blur-md px-5 py-2 rounded-full text-sm md:text-base border border-white/20 font-medium">
                 إعداد: أ. عبدالعزيز الفيفي | ثانوية الأمير عبدالمجيد
             </div>
         </div>
 
-        <div class="p-4 md:p-8 space-y-8">
+        <div class="p-4 md:p-8 space-y-10">
 
-            <!-- Instruction Banner -->
-            <div class="bg-amber-50 border-r-4 border-amber-500 p-4 rounded-l-lg text-amber-900 text-sm md:text-base">
-                📌 <strong>تعليمات:</strong> اختر الإجابة الصحيحة لكل سؤال. ستحصل على تغذية راجعة فورية وتوضيح للحروف المحذوفة أو المزيدة بعد كل إجابة!
+            <!-- Student Info Section -->
+            <div class="bg-slate-50 border border-slate-200 p-4 rounded-xl grid grid-cols-1 md:grid-cols-3 gap-4 text-sm md:text-base font-semibold">
+                <div>اسم الطالب: <span class="border-b border-dashed border-slate-400 inline-block w-2/3"></span></div>
+                <div>الصف: <span class="border-b border-dashed border-slate-400 inline-block w-2/3"></span></div>
+                <div>التاريخ: <span class="border-b border-dashed border-slate-400 inline-block w-2/3">2026 / ... / ... م</span></div>
             </div>
 
+            <!-- SECTION 1: RULES SUMMARY -->
+            <div class="space-y-6">
+                <div class="bg-slate-800 text-amber-400 p-4 rounded-xl font-extrabold text-xl shadow-md border-r-4 border-amber-500 flex items-center gap-2">
+                    <span>📖</span>
+                    <span>ملخص القواعد الإملائية (مواضع الحذف والزيادة الـ 13)</span>
+                </div>
+
+                <!-- First Rule Category: Deletion -->
+                <div class="space-y-4">
+                    <h3 class="text-lg font-bold text-teal-900 border-b-2 border-teal-500 pb-2 flex items-center gap-2">
+                        <span>🔻</span> أولاً: مواضع الحذف (ما ينطق ولا يكتب) - 8 مواضع
+                    </h3>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
+                            <h4 class="font-bold text-teal-800 mb-1">1. الألف في بعض الأسماء والأعلام:</h4>
+                            <p class="text-sm text-slate-600 mb-2">تُحذف من أسماء الإشارة والأعلام لكثرة الاستعمال.</p>
+                            <div class="text-xs bg-white p-2 rounded border border-slate-200 space-y-1">
+                                <div><span class="font-bold text-slate-500">النطق:</span> هاذا، الرحمان، طاهـ، لاكن</div>
+                                <div><span class="font-bold text-teal-700">الكتابة:</span> هذا، الرحمن، طه، لكن</div>
+                            </div>
+                        </div>
+
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
+                            <h4 class="font-bold text-teal-800 mb-1">2. ألف (ابن / ابنة):</h4>
+                            <p class="text-sm text-slate-600 mb-2">تُحذف إذا وقعت مفردة بين علمين مباشرين الثاني أب للأول.</p>
+                            <div class="text-xs bg-white p-2 rounded border border-slate-200 space-y-1">
+                                <div><span class="font-bold text-slate-500">قبل الحذف:</span> عمر ابن الخطاب - خديجة ابنة خويلد</div>
+                                <div><span class="font-bold text-teal-700">بعد الحذف:</span> عمر بن الخطاب - خديجة بنت خويلد</div>
+                            </div>
+                        </div>
+
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
+                            <h4 class="font-bold text-teal-800 mb-1">3. ألف (اسم) في البسملة:</h4>
+                            <p class="text-sm text-slate-600 mb-2">تُحذف في البسملة التامة، وتثبت إذا لم تكتمل مثل (اقرأ باسم ربك).</p>
+                            <div class="text-xs bg-white p-2 rounded border border-slate-200 space-y-1">
+                                <div><span class="font-bold text-slate-500">قبل الحذف:</span> ب اسم الله الرحمن الرحيم</div>
+                                <div><span class="font-bold text-teal-700">بعد الحذف:</span> بسم الله الرحمن الرحيم</div>
+                            </div>
+                        </div>
+
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
+                            <h4 class="font-bold text-teal-800 mb-1">4. الياء في الاسم المنقوص:</h4>
+                            <p class="text-sm text-slate-600 mb-2">تُحذف من الاسم المنقوص النكرة المرفوع والمجرور وتُعوّض بتنوين الكسر.</p>
+                            <div class="text-xs bg-white p-2 rounded border border-slate-200 space-y-1">
+                                <div><span class="font-bold text-slate-500">قبل الحذف:</span> هذا قاضي - مررت بقاضي</div>
+                                <div><span class="font-bold text-teal-700">بعد الحذف:</span> هذا قاضٍ - مررت بقاضٍ</div>
+                            </div>
+                        </div>
+
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
+                            <h4 class="font-bold text-teal-800 mb-1">5. حرف العلة:</h4>
+                            <p class="text-sm text-slate-600 mb-2">يُحذف من آخر فعل الأمر والمضارع المجزوم.</p>
+                            <div class="text-xs bg-white p-2 rounded border border-slate-200 space-y-1">
+                                <div><span class="font-bold text-slate-500">قبل الحذف:</span> ادعو للخير - لا تدعو غير الله</div>
+                                <div><span class="font-bold text-teal-700">بعد الحذف:</span> ادعُ للخير - لا تدعُ غير الله</div>
+                            </div>
+                        </div>
+
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
+                            <h4 class="font-bold text-teal-800 mb-1">6. همزة الوصل:</h4>
+                            <p class="text-sm text-slate-600 mb-2">تُحذف عند دخول همزة الاستفهام عليها.</p>
+                            <div class="text-xs bg-white p-2 rounded border border-slate-200 space-y-1">
+                                <div><span class="font-bold text-slate-500">قبل الحذف:</span> أَاستكبرت أم كنت من العالين</div>
+                                <div><span class="font-bold text-teal-700">بعد الحذف:</span> أستكبرت - أصطفى البنات</div>
+                            </div>
+                        </div>
+
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 md:col-span-2">
+                            <h4 class="font-bold text-teal-800 mb-1">7. ألف (ما) الاستفهامية:</h4>
+                            <p class="text-sm text-slate-600 mb-2">تُحذف وجوباً عند اتصالها بحروف الجر لتخفيف اللفظ والتفرقة بينها وبين ما الموصولة أو النافية.</p>
+                            <div class="grid grid-cols-2 md:grid-cols-4 gap-2 text-xs bg-white p-2 rounded border border-slate-200">
+                                <div><span class="font-bold text-slate-500">عن + ما =</span> <span class="font-bold text-teal-700">عَمَّ؟</span></div>
+                                <div><span class="font-bold text-slate-500">في + ما =</span> <span class="font-bold text-teal-700">فِيمَ؟</span></div>
+                                <div><span class="font-bold text-slate-500">بِـ + ما =</span> <span class="font-bold text-teal-700">بِمَ؟</span></div>
+                                <div><span class="font-bold text-slate-500">إلى + ما =</span> <span class="font-bold text-teal-700">إِلاَمَ؟</span></div>
+                                <div><span class="font-bold text-slate-500">على + ما =</span> <span class="font-bold text-teal-700">عَلاَمَ؟</span></div>
+                                <div><span class="font-bold text-slate-500">لِـ + ما =</span> <span class="font-bold text-teal-700">لِمَ؟</span></div>
+                                <div><span class="font-bold text-slate-500">من + ما =</span> <span class="font-bold text-teal-700">مِمَّ؟</span></div>
+                                <div><span class="font-bold text-slate-500">حتى + ما =</span> <span class="font-bold text-teal-700">حَتَّامَ؟</span></div>
+                            </div>
+                        </div>
+
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 md:col-span-2">
+                            <h4 class="font-bold text-teal-800 mb-1">8. ال التعريف (أو همزتها):</h4>
+                            <p class="text-sm text-slate-600 mb-2">عند دخول لام الجر المكسورة، تُحذف همزة الوصل فقط من (الـ) في الكلمات العادية، بينما تُحذف (الـ) بكاملها إذا كانت الكلمة تبدأ بلام تجنباً لاجتماع ثلاث لامات.</p>
+                            <div class="text-xs bg-white p-2 rounded border border-slate-200 space-y-1">
+                                <div><span class="font-bold text-slate-500">حذف همزة الوصل فقط:</span> لـ + الـ + كتاب = <span class="font-bold text-teal-700">لِلكتاب</span></div>
+                                <div><span class="font-bold text-slate-500">حذف (الـ) كاملة:</span> لـ + الـ + لغة = <span class="font-bold text-teal-700">لِلُّغة</span> | لـ + الـ + لحم = <span class="font-bold text-teal-700">لِلَّحم</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Rule Category: Addition -->
+                <div class="space-y-4 pt-4">
+                    <h3 class="text-lg font-bold text-amber-800 border-b-2 border-amber-500 pb-2 flex items-center gap-2">
+                        <span>🔺</span> ثانياً: مواضع الزيادة (ما يكتب ولا ينطق) - 5 مواضع
+                    </h3>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
+                            <h4 class="font-bold text-amber-800 mb-1">1. الألف الفارقة:</h4>
+                            <p class="text-sm text-slate-600 mb-2">تُزاد بعد واو الجماعة في الأفعال للتفرقة بينها وبين الواو الأصلية أو واو الجمع.</p>
+                            <div class="text-xs bg-white p-2 rounded border border-slate-200 space-y-1">
+                                <div><span class="font-bold text-slate-500">قبل الزيادة:</span> كتبو - لن يذهبو</div>
+                                <div><span class="font-bold text-amber-700">بعد الزيادة:</span> كتبوا - لن يذهبوا</div>
+                            </div>
+                        </div>
+
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
+                            <h4 class="font-bold text-amber-800 mb-1">2. ألف تنوين النصب:</h4>
+                            <p class="text-sm text-slate-600 mb-2">تُزاد في آخر الأسماء المنصوبة للتنوين (إلا المنتهية بتاء مربوطة أو همزة سبقتها ألف أو مقصورة).</p>
+                            <div class="text-xs bg-white p-2 rounded border border-slate-200 space-y-1">
+                                <div><span class="font-bold text-slate-500">قبل الزيادة:</span> كتاب - قلم</div>
+                                <div><span class="font-bold text-amber-700">بعد الزيادة:</span> كتاباً - قلماً</div>
+                            </div>
+                        </div>
+
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
+                            <h4 class="font-bold text-amber-800 mb-1">3. واو (عمرو):</h4>
+                            <p class="text-sm text-slate-600 mb-2">تُزاد الواو خطاً في آخر اسم (عمرو) في حالتي الرفع والجر للتفريق بينه وبين (عُمَر).</p>
+                            <div class="text-xs bg-white p-2 rounded border border-slate-200 space-y-1">
+                                <div><span class="font-bold text-slate-500">المثال:</span> جاء عمـ<span class="add-highlight">و</span>رو - مررت بعمـ<span class="add-highlight">و</span>رو</div>
+                            </div>
+                        </div>
+
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
+                            <h4 class="font-bold text-amber-800 mb-1">4. واو (أولئك / أولات / أولو):</h4>
+                            <p class="text-sm text-slate-600 mb-2">تُزاد الواو خطاً وسط اسم الإشارة والملحقات بجمع المذكر/المؤنث السالم.</p>
+                            <div class="text-xs bg-white p-2 rounded border border-slate-200 space-y-1">
+                                <div><span class="font-bold text-amber-700">الكلمات:</span> أ<span class="add-highlight">و</span>لئك - أ<span class="add-highlight">و</span>لات - أ<span class="add-highlight">و</span>لو</div>
+                            </div>
+                        </div>
+
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 md:col-span-2">
+                            <h4 class="font-bold text-amber-800 mb-1">5. ألف (مائة) وألف الإطلاق الشعرية:</h4>
+                            <p class="text-sm text-slate-600 mb-2">تُزاد الألف في كلمة (مائة ومضاعفاتها) للتفريق قديماً، وتُزاد في أواخر الأبيات الشعرية (الإطلاق).</p>
+                            <div class="text-xs bg-white p-2 rounded border border-slate-200 space-y-1">
+                                <div><span class="font-bold text-amber-700">الأمثلة:</span> مـ<span class="add-highlight">ا</span>ئة - ثلاثمـ<span class="add-highlight">ا</span>ئة - ألا أيهـا الليل الطويـل ألا انجلـ<span class="add-highlight">ا</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Instruction Banner -->
+            <div class="bg-amber-50 border-r-4 border-amber-500 p-4 rounded-l-lg text-amber-900 text-sm md:text-base shadow-sm">
+                📌 <strong>تعليمات التدريبات:</strong> اختر الإجابة الصحيحة لكل سؤال. ستحصل على تغذية راجعة فورية وتوضيح للحروف المحذوفة أو المزيدة بعد كل إجابة!
+            </div>
+
+            <!-- SECTION 2: INTERACTIVE EXERCISES -->
             <form id="quizForm" onsubmit="event.preventDefault();">
 
                 <!-- القسم الأول -->
                 <div class="space-y-6">
                     <div class="bg-teal-800 text-white p-3 rounded-lg font-bold text-lg shadow-sm flex items-center gap-2">
-                        <span>📌</span>
-                        <span>القسم الأول: الحذف الإملائي (اختيار من متعدد وصواب/خطأ)</span>
+                        <span>📝</span>
+                        <span>ثالثاً: التدريبات التطبيقية التفاعلية</span>
                     </div>
 
                     <!-- Q1 -->
@@ -69,15 +224,15 @@
                         <p class="font-bold text-lg mb-4 text-slate-800">1. أي الكلمات التالية حُذفت منها الألف خطاً لا لفظاً؟</p>
                         <div class="space-y-2">
                             <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
-                                <input type="radio" name="q1" value="0" class="hidden" onchange="checkAnswer(1, 0, 1, 'كلمة (الرحمـ<span class=\'del-highlight\'>ا</span>ن) حُذفت منها الألف خطاً وبقيت لفظاً.')">
+                                <input type="radio" name="q1" value="0" class="hidden" onchange="checkAnswer(1, 0, 1)">
                                 أ) القلم
                             </label>
                             <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
-                                <input type="radio" name="q1" value="1" class="hidden" onchange="checkAnswer(1, 1, 1, 'إجابة صحيحة! كلمة (الرحمـ<span class=\'del-highlight\'>ا</span>ن) حُذفت منها الألف خطاً وبقيت في اللفظ.')">
+                                <input type="radio" name="q1" value="1" class="hidden" onchange="checkAnswer(1, 1, 1)">
                                 ب) الرحمن
                             </label>
                             <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
-                                <input type="radio" name="q1" value="2" class="hidden" onchange="checkAnswer(1, 2, 1, 'كلمة (الرحمـ<span class=\'del-highlight\'>ا</span>ن) حُذفت منها الألف خطاً.')">
+                                <input type="radio" name="q1" value="2" class="hidden" onchange="checkAnswer(1, 2, 1)">
                                 ج) قاضي
                             </label>
                         </div>
@@ -89,15 +244,15 @@
                         <p class="font-bold text-lg mb-4 text-slate-800">2. حدد الكتابة الصحيحة لكلمة (لغة) عند دخول لام الجر عليها:</p>
                         <div class="space-y-2">
                             <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
-                                <input type="radio" name="q2" value="0" class="hidden" onchange="checkAnswer(2, 0, 1, 'عند دخول لام الجر على كلمة مبدوءة بلام تُحذف (ال) بأكملها.')">
+                                <input type="radio" name="q2" value="0" class="hidden" onchange="checkAnswer(2, 0, 1)">
                                 أ) للغة (بحذف همزة الوصل فقط)
                             </label>
                             <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
-                                <input type="radio" name="q2" value="1" class="hidden" onchange="checkAnswer(2, 1, 1, 'إجابة صحيحة! تُحذف (<span class=\'del-highlight\'>الـ</span>لغة ⬅️ للغة) بأكملها تجنباً لتتالي ثلاث لامات.')">
+                                <input type="radio" name="q2" value="1" class="hidden" onchange="checkAnswer(2, 1, 1)">
                                 ب) للغة (بحذف الـ كاملة)
                             </label>
                             <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
-                                <input type="radio" name="q2" value="2" class="hidden" onchange="checkAnswer(2, 2, 1, 'الصواب بحذف (الـ) كاملة تجنباً لاجتماع 3 لامات.')">
+                                <input type="radio" name="q2" value="2" class="hidden" onchange="checkAnswer(2, 2, 1)">
                                 ج) اللغَة (بدون حذف)
                             </label>
                         </div>
@@ -109,15 +264,15 @@
                         <p class="font-bold text-lg mb-4 text-slate-800">3. اسم الإشارة الذي حُذفت منه الألف خطاً فيما يلي هو:</p>
                         <div class="space-y-2">
                             <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
-                                <input type="radio" name="q3" value="0" class="hidden" onchange="checkAnswer(3, 0, 0, 'إجابة صحيحة! اسم الإشارة (هـ<span class=\'del-highlight\'>ا</span>ذا) حُذفت منه الألف خطاً وبقيت لفظاً.')">
+                                <input type="radio" name="q3" value="0" class="hidden" onchange="checkAnswer(3, 0, 0)">
                                 أ) هذا
                             </label>
                             <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
-                                <input type="radio" name="q3" value="1" class="hidden" onchange="checkAnswer(3, 1, 0, 'كلمة (هذا) هي التي حُذفت منها الألف.')">
+                                <input type="radio" name="q3" value="1" class="hidden" onchange="checkAnswer(3, 1, 0)">
                                 ب) هنا
                             </label>
                             <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
-                                <input type="radio" name="q3" value="2" class="hidden" onchange="checkAnswer(3, 2, 0, 'الألف ثابتة في (هاتان)، بينما تُحذف في (هذا).')">
+                                <input type="radio" name="q3" value="2" class="hidden" onchange="checkAnswer(3, 2, 0)">
                                 ج) هاتان
                             </label>
                         </div>
@@ -129,15 +284,15 @@
                         <p class="font-bold text-lg mb-4 text-slate-800">4. عند تنوين كلمة (قاضي) تنوين رفع وهي نكرة، تُكتب:</p>
                         <div class="space-y-2">
                             <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
-                                <input type="radio" name="q4" value="0" class="hidden" onchange="checkAnswer(4, 0, 1, 'الصواب حذف الياء والتعويض عنها بتنوين الكسر (قاضٍ).')">
+                                <input type="radio" name="q4" value="0" class="hidden" onchange="checkAnswer(4, 0, 1)">
                                 أ) قاضي
                             </label>
                             <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
-                                <input type="radio" name="q4" value="1" class="hidden" onchange="checkAnswer(4, 1, 1, 'إجابة صحيحة! تُحذف الياء من الاسم المنقوص النكرة في الرفع والجر (قاضـ<span class=\'del-highlight\'>ي</span> ⬅️ قاضٍ).')">
+                                <input type="radio" name="q4" value="1" class="hidden" onchange="checkAnswer(4, 1, 1)">
                                 ب) قاضٍ
                             </label>
                             <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
-                                <input type="radio" name="q4" value="2" class="hidden" onchange="checkAnswer(4, 2, 1, 'الاسم المنقوص يُحذف آخره في حالة الرفع والجر عند التنكير.')">
+                                <input type="radio" name="q4" value="2" class="hidden" onchange="checkAnswer(4, 2, 1)">
                                 ج) قاضًا
                             </label>
                         </div>
@@ -146,18 +301,18 @@
 
                     <!-- Q5 -->
                     <div class="question-block bg-slate-50 p-5 rounded-xl border border-slate-200" id="q-box-5">
-                        <p class="font-bold text-lg mb-4 text-slate-800">5. الجملة التي حُذفت منها حرف العلة لسبب نحوي هي:</p>
+                        <p class="font-bold text-lg mb-4 text-slate-800">5. الجملة التي حُذف منها حرف العلة لسبب نحوي هي:</p>
                         <div class="space-y-2">
                             <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
-                                <input type="radio" name="q5" value="0" class="hidden" onchange="checkAnswer(5, 0, 1, 'إجابة صحيحة! (لم يدعُ) حُذفت الواو منها للعادة الجزم (يدعـ<span class=\'del-highlight\'>و</span> ⬅️ يدعُ).')">
+                                <input type="radio" name="q5" value="0" class="hidden" onchange="checkAnswer(5, 0, 0)">
                                 أ) لا تدعُ إلا الله
                             </label>
                             <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
-                                <input type="radio" name="q5" value="1" class="hidden" onchange="checkAnswer(5, 1, 1, 'حُذف حرف العلة في (تدعُ) بسبب الجزم.')">
+                                <input type="radio" name="q5" value="1" class="hidden" onchange="checkAnswer(5, 1, 0)">
                                 ب) هو يدعو للخير
                             </label>
                             <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
-                                <input type="radio" name="q5" value="2" class="hidden" onchange="checkAnswer(5, 2, 1, 'الواو ثابتة في حالة الرفع.')">
+                                <input type="radio" name="q5" value="2" class="hidden" onchange="checkAnswer(5, 2, 0)">
                                 ج) ادعوا للخير
                             </label>
                         </div>
@@ -166,14 +321,14 @@
 
                     <!-- Q6 -->
                     <div class="question-block bg-slate-50 p-5 rounded-xl border border-slate-200" id="q-box-6">
-                        <p class="font-bold text-lg mb-4 text-slate-800">6. (صح أم خطأ): تُحذف همزة الوصل من كلمة (ابن) إذا وقعت بين علمين الثاني أب للأول وعلى سطر واحد.</p>
+                        <p class="font-bold text-lg mb-4 text-slate-800">6. (صح أم خطأ): تُحذف همزة الوصل من كلمة (ابن) إذا وقعت مفردة بين علمين الثاني أب للأول وعلى سطر واحد.</p>
                         <div class="space-y-2">
                             <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
-                                <input type="radio" name="q6" value="0" class="hidden" onchange="checkAnswer(6, 0, 0, 'إجابة صحيحة! مثل: (عمر <span class=\'del-highlight\'>ا</span>بن الخطاب ⬅️ عمر بن الخطاب).')">
+                                <input type="radio" name="q6" value="0" class="hidden" onchange="checkAnswer(6, 0, 0)">
                                 أ) صح
                             </label>
                             <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
-                                <input type="radio" name="q6" value="1" class="hidden" onchange="checkAnswer(6, 1, 0, 'العبارة صحيحة تماماً.')">
+                                <input type="radio" name="q6" value="1" class="hidden" onchange="checkAnswer(6, 1, 0)">
                                 ب) خطأ
                             </label>
                         </div>
@@ -185,11 +340,11 @@
                         <p class="font-bold text-lg mb-4 text-slate-800">7. (صح أم خطأ): كلمة (أولئك) حُذفت منها الألف لفظاً وزِيدت خطاً.</p>
                         <div class="space-y-2">
                             <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
-                                <input type="radio" name="q7" value="0" class="hidden" onchange="checkAnswer(7, 0, 1, 'العبارة خاطئة! كلمة (أولئك) زِيدت فيها الواو خطاً وحُذفت منها الألف خطاً.')">
+                                <input type="radio" name="q7" value="0" class="hidden" onchange="checkAnswer(7, 0, 1)">
                                 أ) صح
                             </label>
                             <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
-                                <input type="radio" name="q7" value="1" class="hidden" onchange="checkAnswer(7, 1, 1, 'إجابة صحيحة! العبارة خاطئة؛ فالواو هي الزائدة خطاً لا لفظاً (أ<span class=\'add-highlight\'>و</span>لئك).')">
+                                <input type="radio" name="q7" value="1" class="hidden" onchange="checkAnswer(7, 1, 1)">
                                 ب) خطأ
                             </label>
                         </div>
@@ -201,15 +356,15 @@
                         <p class="font-bold text-lg mb-4 text-slate-800">8. الكلمة التي حُذفت منها النون للإدغام هي:</p>
                         <div class="space-y-2">
                             <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
-                                <input type="radio" name="q8" value="0" class="hidden" onchange="checkAnswer(8, 0, 0, 'إجابة صحيحة! أصلها (عـ<span class=\'del-highlight\'>ن</span> + مّا = عمّا) حُذفت النون خطاً ولفظاً للاكتفاء بالشدة.')">
+                                <input type="radio" name="q8" value="0" class="hidden" onchange="checkAnswer(8, 0, 0)">
                                 أ) عَمَّ
                             </label>
                             <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
-                                <input type="radio" name="q8" value="1" class="hidden" onchange="checkAnswer(8, 1, 0, 'كلمة (عمَّ) أصلها (عن ما).')">
+                                <input type="radio" name="q8" value="1" class="hidden" onchange="checkAnswer(8, 1, 0)">
                                 ب) منكم
                             </label>
                             <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
-                                <input type="radio" name="q8" value="2" class="hidden" onchange="checkAnswer(8, 2, 0, 'النون موجودة وثابتة في (عنكم).')">
+                                <input type="radio" name="q8" value="2" class="hidden" onchange="checkAnswer(8, 2, 0)">
                                 ج) عنكم
                             </label>
                         </div>
@@ -221,15 +376,15 @@
                         <p class="font-bold text-lg mb-4 text-slate-800">9. ما الحرف المحذوف في كلمة (الله)؟</p>
                         <div class="space-y-2">
                             <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
-                                <input type="radio" name="q9" value="0" class="hidden" onchange="checkAnswer(9, 0, 0, 'إجابة صحيحة! لفظ الجلالة (اللـ<span class=\'del-highlight\'>ا</span>ه) حُذفت الألف فيه خطاً وبقيت لفظاً.')">
+                                <input type="radio" name="q9" value="0" class="hidden" onchange="checkAnswer(9, 0, 0)">
                                 أ) الألف
                             </label>
                             <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
-                                <input type="radio" name="q9" value="1" class="hidden" onchange="checkAnswer(9, 1, 0, 'الحرف المحذوف خطاً هو الألف.')">
+                                <input type="radio" name="q9" value="1" class="hidden" onchange="checkAnswer(9, 1, 0)">
                                 ب) الواو
                             </label>
                             <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
-                                <input type="radio" name="q9" value="2" class="hidden" onchange="checkAnswer(9, 2, 0, 'اللام موجودة ومضعفة.')">
+                                <input type="radio" name="q9" value="2" class="hidden" onchange="checkAnswer(9, 2, 0)">
                                 ج) اللام
                             </label>
                         </div>
@@ -241,44 +396,36 @@
                         <p class="font-bold text-lg mb-4 text-slate-800">10. عند تحويل الفعل (قال) لأمر المخاطب المذكر يصبح (قُل)، الحرف المحذوف هو:</p>
                         <div class="space-y-2">
                             <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
-                                <input type="radio" name="q10" value="0" class="hidden" onchange="checkAnswer(10, 0, 0, 'إجابة صحيحة! أصلها (قـ<span class=\'del-highlight\'>ا</span>ل ⬅️ قُل) حُذفت الألف لمنع التقاء الساكنين.')">
+                                <input type="radio" name="q10" value="0" class="hidden" onchange="checkAnswer(10, 0, 0)">
                                 أ) الألف
                             </label>
                             <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
-                                <input type="radio" name="q10" value="1" class="hidden" onchange="checkAnswer(10, 1, 0, 'الألف الوسطى هي المحذوفة.')">
+                                <input type="radio" name="q10" value="1" class="hidden" onchange="checkAnswer(10, 1, 0)">
                                 ب) الواو
                             </label>
                             <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
-                                <input type="radio" name="q10" value="2" class="hidden" onchange="checkAnswer(10, 2, 0, 'القاف حرف أصلي موجود.')">
+                                <input type="radio" name="q10" value="2" class="hidden" onchange="checkAnswer(10, 2, 0)">
                                 ج) القاف
                             </label>
                         </div>
                         <div class="feedback hidden mt-3 p-3 rounded-lg text-sm font-semibold"></div>
                     </div>
-                </div>
-
-                <!-- القسم الثاني -->
-                <div class="space-y-6 mt-10">
-                    <div class="bg-amber-700 text-white p-3 rounded-lg font-bold text-lg shadow-sm flex items-center gap-2">
-                        <span>📌</span>
-                        <span>القسم الثاني: الزيادة الإملائية (اختيار من متعدد وصواب/خطأ)</span>
-                    </div>
 
                     <!-- Q11 -->
                     <div class="question-block bg-slate-50 p-5 rounded-xl border border-slate-200" id="q-box-11">
-                        <p class="font-bold text-lg mb-4 text-slate-800">11. تُسمى الألف المضافة بعد واو الجماعة في الأفعال بـ:</p>
+                        <p class="font-bold text-lg mb-4 text-slate-800">11. عند دخول لام الجر على كلمة (الكتاب) فإن المحذوف هو:</p>
                         <div class="space-y-2">
                             <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
-                                <input type="radio" name="q11" value="0" class="hidden" onchange="checkAnswer(11, 0, 1, 'الصواب أنها تُسمى الألف الفارقة.')">
-                                أ) ألف التنوين
+                                <input type="radio" name="q11" value="0" class="hidden" onchange="checkAnswer(11, 0, 0)">
+                                أ) همزة الوصل فقط
                             </label>
                             <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
-                                <input type="radio" name="q11" value="1" class="hidden" onchange="checkAnswer(11, 1, 1, 'إجابة صحيحة! تُسمى بالألف الفارقة لأنها تفرّق بين واو الجماعة والواو الأصلية.')">
-                                ب) الألف الفارقة
+                                <input type="radio" name="q11" value="1" class="hidden" onchange="checkAnswer(11, 1, 0)">
+                                ب) (الـ) التعريف كاملاً
                             </label>
                             <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
-                                <input type="radio" name="q11" value="2" class="hidden" onchange="checkAnswer(11, 2, 1, 'تُسمى الألف الفارقة.')">
-                                ج) ألف الإطلاق
+                                <input type="radio" name="q11" value="2" class="hidden" onchange="checkAnswer(11, 2, 0)">
+                                ج) حرف الكاف الأصلي
                             </label>
                         </div>
                         <div class="feedback hidden mt-3 p-3 rounded-lg text-sm font-semibold"></div>
@@ -286,19 +433,19 @@
 
                     <!-- Q12 -->
                     <div class="question-block bg-slate-50 p-5 rounded-xl border border-slate-200" id="q-box-12">
-                        <p class="font-bold text-lg mb-4 text-slate-800">12. أي الأفعال التالية كُتبت فيه الألف الفارقة بشكل صحيح؟</p>
+                        <p class="font-bold text-lg mb-4 text-slate-800">12. تُحذف ألف (ما) الاستفهامية عند دخول حرف الجر عليها في التراكيب التالية عدا تركيبة واحدة خاطئة إملاءً وهي:</p>
                         <div class="space-y-2">
                             <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
-                                <input type="radio" name="q12" value="0" class="hidden" onchange="checkAnswer(12, 0, 0, 'إجابة صحيحة! (كتبـو<span class=\'add-highlight\'>ا</span>) حوى واو الجماعة فزِيدت بعده الألف الفارقة.')">
-                                أ) كتبوا
+                                <input type="radio" name="q12" value="0" class="hidden" onchange="checkAnswer(12, 0, 2)">
+                                أ) عَمَّ يتساءلون؟
                             </label>
                             <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
-                                <input type="radio" name="q12" value="1" class="hidden" onchange="checkAnswer(12, 1, 0, 'في (يدعو) الواو أصلية فلا تضاف ألف فارقة.')">
-                                ب) يدعوا
+                                <input type="radio" name="q12" value="1" class="hidden" onchange="checkAnswer(12, 1, 2)">
+                                ب) فِيمَ تفكر؟
                             </label>
                             <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
-                                <input type="radio" name="q12" value="2" class="hidden" onchange="checkAnswer(12, 2, 0, 'في (نرجو) الواو أصلية فلا تُزاد الألف.')">
-                                ج) نرجوا
+                                <input type="radio" name="q12" value="2" class="hidden" onchange="checkAnswer(12, 2, 2)">
+                                ج) بما كتبت؟
                             </label>
                         </div>
                         <div class="feedback hidden mt-3 p-3 rounded-lg text-sm font-semibold"></div>
@@ -306,19 +453,19 @@
 
                     <!-- Q13 -->
                     <div class="question-block bg-slate-50 p-5 rounded-xl border border-slate-200" id="q-box-13">
-                        <p class="font-bold text-lg mb-4 text-slate-800">13. تِزاد الواو خطاً في كلمة (عمرو) في حالتي:</p>
+                        <p class="font-bold text-lg mb-4 text-slate-800">13. ما السبب في حذف ألف (ما) في قولنا: (عَلاَمَ تُراهن؟)؟</p>
                         <div class="space-y-2">
                             <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
-                                <input type="radio" name="q13" value="0" class="hidden" onchange="checkAnswer(13, 0, 1, 'الصواب في الرفع والجر، وفي النصب تُبدل بألف تنوين.')">
-                                أ) النصب والجر
+                                <input type="radio" name="q13" value="0" class="hidden" onchange="checkAnswer(13, 0, 0)">
+                                أ) لأنها (ما) الاستفهامية واتصلت بحرف الجر (على)
                             </label>
                             <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
-                                <input type="radio" name="q13" value="1" class="hidden" onchange="checkAnswer(13, 1, 1, 'إجابة صحيحة! تُزاد الواو في (عمـر<span class=\'add-highlight\'>و</span>) رفعاً وجراً للتفريق بينها وبين (عُمَر).')">
-                                ب) الرفع والجر
+                                <input type="radio" name="q13" value="1" class="hidden" onchange="checkAnswer(13, 1, 0)">
+                                ب) لأنها (ما) الموصولة
                             </label>
                             <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
-                                <input type="radio" name="q13" value="2" class="hidden" onchange="checkAnswer(13, 2, 1, 'تُزاد الواو في الرفع والجر فقط.')">
-                                ج) الرفع والنصب
+                                <input type="radio" name="q13" value="2" class="hidden" onchange="checkAnswer(13, 2, 0)">
+                                ج) لأنها (ما) النافية
                             </label>
                         </div>
                         <div class="feedback hidden mt-3 p-3 rounded-lg text-sm font-semibold"></div>
@@ -326,19 +473,15 @@
 
                     <!-- Q14 -->
                     <div class="question-block bg-slate-50 p-5 rounded-xl border border-slate-200" id="q-box-14">
-                        <p class="font-bold text-lg mb-4 text-slate-800">14. الجملة الصحيحة إملائياً فيما يلي هي:</p>
+                        <p class="font-bold text-lg mb-4 text-slate-800">14. (صح أم خطأ): تثبت الألف في (ما) الاستفهامية عند دخول حروف الجر عليها مثل: (عن ما، في ما).</p>
                         <div class="space-y-2">
                             <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
-                                <input type="radio" name="q14" value="0" class="hidden" onchange="checkAnswer(14, 0, 1, 'لا تُزاد الألف الفارقة بعد جمع المذكر السالم.')">
-                                أ) حضر معلموا المدرسة
+                                <input type="radio" name="q14" value="0" class="hidden" onchange="checkAnswer(14, 0, 1)">
+                                أ) صح
                             </label>
                             <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
-                                <input type="radio" name="q14" value="1" class="hidden" onchange="checkAnswer(14, 1, 1, 'إجابة صحيحة! (معلمو) جمع مذكر سالم حُذفت نونه للإضافة ولا تُزاد بعده ألف فارقة.')">
-                                ب) حضر معلمو المدرسة
-                            </label>
-                            <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
-                                <input type="radio" name="q14" value="2" class="hidden" onchange="checkAnswer(14, 2, 1, 'النون تُحذف للإضافة.')">
-                                ج) حضر معلمين المدرسة
+                                <input type="radio" name="q14" value="1" class="hidden" onchange="checkAnswer(14, 1, 1)">
+                                ب) خطأ
                             </label>
                         </div>
                         <div class="feedback hidden mt-3 p-3 rounded-lg text-sm font-semibold"></div>
@@ -346,15 +489,19 @@
 
                     <!-- Q15 -->
                     <div class="question-block bg-slate-50 p-5 rounded-xl border border-slate-200" id="q-box-15">
-                        <p class="font-bold text-lg mb-4 text-slate-800">15. (صح أم خطأ): تُزاد ألف تنوين النصب في جميع الأسماء المنونة نصباً دون استثناء.</p>
+                        <p class="font-bold text-lg mb-4 text-slate-800">15. التعبير الإملائي الصحيح لجملة السؤال: (عن + ما تسأل؟) هو:</p>
                         <div class="space-y-2">
                             <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
-                                <input type="radio" name="q15" value="0" class="hidden" onchange="checkAnswer(15, 0, 1, 'توجد استثناءات مثل الكلمات المنتهية بتاء مربوطة أو همزة على ألف.')">
-                                أ) صح
+                                <input type="radio" name="q15" value="0" class="hidden" onchange="checkAnswer(15, 0, 1)">
+                                أ) عن ما تسأل؟
                             </label>
                             <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
-                                <input type="radio" name="q15" value="1" class="hidden" onchange="checkAnswer(15, 1, 1, 'إجابة صحيحة! العبارة خاطئة؛ تُستثنى الكلمات المنتهية بتاء مربوطة (مدرسةً) أو همزة قبلها ألف (ماءً).')">
-                                ب) خطأ
+                                <input type="radio" name="q15" value="1" class="hidden" onchange="checkAnswer(15, 1, 1)">
+                                ب) عَمَّ تسأل؟
+                            </label>
+                            <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
+                                <input type="radio" name="q15" value="2" class="hidden" onchange="checkAnswer(15, 2, 1)">
+                                ج) عَمّا تسأل؟
                             </label>
                         </div>
                         <div class="feedback hidden mt-3 p-3 rounded-lg text-sm font-semibold"></div>
@@ -362,19 +509,19 @@
 
                     <!-- Q16 -->
                     <div class="question-block bg-slate-50 p-5 rounded-xl border border-slate-200" id="q-box-16">
-                        <p class="font-bold text-lg mb-4 text-slate-800">16. أي الكلمات التالية تحوي حرفاً زائداً خطاً لا لفظاً؟</p>
+                        <p class="font-bold text-lg mb-4 text-slate-800">16. تُسمى الألف المزيدة بعد واو الجماعة في الأفعال بـ:</p>
                         <div class="space-y-2">
                             <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
-                                <input type="radio" name="q16" value="0" class="hidden" onchange="checkAnswer(16, 0, 0, 'إجابة صحيحة! كلمة (أ<span class=\'add-highlight\'>و</span>لات) زِيدت فيها الواو خطاً لا لفظاً.')">
-                                أ) أولات
+                                <input type="radio" name="q16" value="0" class="hidden" onchange="checkAnswer(16, 0, 1)">
+                                أ) ألف الإطلاق
                             </label>
                             <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
-                                <input type="radio" name="q16" value="1" class="hidden" onchange="checkAnswer(16, 1, 0, 'حروف كلمة (أولئك) بها واو زائدة أيضاً، ولكن الاختيار (أولات) صحيح.')">
-                                ب) قاضي
+                                <input type="radio" name="q16" value="1" class="hidden" onchange="checkAnswer(16, 1, 1)">
+                                ب) الألف الفارقة
                             </label>
                             <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
-                                <input type="radio" name="q16" value="2" class="hidden" onchange="checkAnswer(16, 2, 0, 'لا يوجد حروف زائدة خطاً في (يدعو).')">
-                                ج) يدعو
+                                <input type="radio" name="q16" value="2" class="hidden" onchange="checkAnswer(16, 2, 1)">
+                                ج) ألف التنوين
                             </label>
                         </div>
                         <div class="feedback hidden mt-3 p-3 rounded-lg text-sm font-semibold"></div>
@@ -382,19 +529,19 @@
 
                     <!-- Q17 -->
                     <div class="question-block bg-slate-50 p-5 rounded-xl border border-slate-200" id="q-box-17">
-                        <p class="font-bold text-lg mb-4 text-slate-800">17. تِزاد الواو في اسم (عمرو) خطاً لتفريقها عن اسم:</p>
+                        <p class="font-bold text-lg mb-4 text-slate-800">17. الفعل الذي اشتمل على حرف مزيد خطاً هو:</p>
                         <div class="space-y-2">
                             <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
-                                <input type="radio" name="q17" value="0" class="hidden" onchange="checkAnswer(17, 0, 0, 'إجابة صحيحة! زِيدت الواو للتفرقة بين (عمرو) و(عُمَر).')">
-                                أ) عُمَر
+                                <input type="radio" name="q17" value="0" class="hidden" onchange="checkAnswer(17, 0, 0)">
+                                أ) كتبوا
                             </label>
                             <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
-                                <input type="radio" name="q17" value="1" class="hidden" onchange="checkAnswer(17, 1, 0, 'الصواب للتفرقة عن اسم (عُمَر).')">
-                                ب) عمار
+                                <input type="radio" name="q17" value="1" class="hidden" onchange="checkAnswer(17, 1, 0)">
+                                ب) يدعو
                             </label>
                             <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
-                                <input type="radio" name="q17" value="2" class="hidden" onchange="checkAnswer(17, 2, 0, 'الصواب للتفرقة عن اسم (عُمَر).')">
-                                ج) عمران
+                                <input type="radio" name="q17" value="2" class="hidden" onchange="checkAnswer(17, 2, 0)">
+                                ج) يرجو
                             </label>
                         </div>
                         <div class="feedback hidden mt-3 p-3 rounded-lg text-sm font-semibold"></div>
@@ -402,19 +549,19 @@
 
                     <!-- Q18 -->
                     <div class="question-block bg-slate-50 p-5 rounded-xl border border-slate-200" id="q-box-18">
-                        <p class="font-bold text-lg mb-4 text-slate-800">18. عند تنوين كلمة (مَاء) تنوين نصب، تُكتب:</p>
+                        <p class="font-bold text-lg mb-4 text-slate-800">18. تُزاد الواو خطاً في اسم (عمرو) في حالتي:</p>
                         <div class="space-y-2">
                             <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
-                                <input type="radio" name="q18" value="0" class="hidden" onchange="checkAnswer(18, 0, 1, 'الصواب عدم زيادة ألف لأن الهمزة مسبوقة بألف.')">
-                                أ) ماءاً
+                                <input type="radio" name="q18" value="0" class="hidden" onchange="checkAnswer(18, 0, 1)">
+                                أ) النصب والجر
                             </label>
                             <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
-                                <input type="radio" name="q18" value="1" class="hidden" onchange="checkAnswer(18, 1, 1, 'إجابة صحيحة! لا تُزاد ألف التنوين بعد الهمزة المتطرفة إذا كانت مسبوقة بألف (ماءً).')">
-                                ب) ماءً
+                                <input type="radio" name="q18" value="1" class="hidden" onchange="checkAnswer(18, 1, 1)">
+                                ب) الرفع والجر
                             </label>
                             <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
-                                <input type="radio" name="q18" value="2" class="hidden" onchange="checkAnswer(18, 2, 1, 'تُكتب بالتنوين فقط فوق الهمزة.')">
-                                ج) ماء
+                                <input type="radio" name="q18" value="2" class="hidden" onchange="checkAnswer(18, 2, 1)">
+                                ج) الرفع والنصب
                             </label>
                         </div>
                         <div class="feedback hidden mt-3 p-3 rounded-lg text-sm font-semibold"></div>
@@ -422,15 +569,19 @@
 
                     <!-- Q19 -->
                     <div class="question-block bg-slate-50 p-5 rounded-xl border border-slate-200" id="q-box-19">
-                        <p class="font-bold text-lg mb-4 text-slate-800">19. (صح أم خطأ): الألف في الفعل (مهندسوا الشركة) كُتبت بشكل صحيح.</p>
+                        <p class="font-bold text-lg mb-4 text-slate-800">19. الكلمة التي لا تُزاد بعدها الألف الفارقة هي:</p>
                         <div class="space-y-2">
                             <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
-                                <input type="radio" name="q19" value="0" class="hidden" onchange="checkAnswer(19, 0, 1, 'العبارة خاطئة لأن كلمة (مهندسو) اسم وجمع مذكر سالم فلا تأخذ ألف فارقة.')">
-                                أ) صح
+                                <input type="radio" name="q19" value="0" class="hidden" onchange="checkAnswer(19, 0, 1)">
+                                أ) فهموا
                             </label>
                             <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
-                                <input type="radio" name="q19" value="1" class="hidden" onchange="checkAnswer(19, 1, 1, 'إجابة صحيحة! العبارة خاطئة؛ لأن (مهندسو) اسم وليس فعلاً والألف الفارقة تضاف للأفعال فقط.')">
-                                ب) خطأ
+                                <input type="radio" name="q19" value="1" class="hidden" onchange="checkAnswer(19, 1, 1)">
+                                ب) معلمو المدرسة
+                            </label>
+                            <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
+                                <input type="radio" name="q19" value="2" class="hidden" onchange="checkAnswer(19, 2, 1)">
+                                ج) لم يكتبوا
                             </label>
                         </div>
                         <div class="feedback hidden mt-3 p-3 rounded-lg text-sm font-semibold"></div>
@@ -438,105 +589,357 @@
 
                     <!-- Q20 -->
                     <div class="question-block bg-slate-50 p-5 rounded-xl border border-slate-200" id="q-box-20">
-                        <p class="font-bold text-lg mb-4 text-slate-800">20. الكلمة التي زِيدت فيها الألف هي:</p>
+                        <p class="font-bold text-lg mb-4 text-slate-800">20. (صح أم خطأ): تُزاد ألف تنوين النصب في جميع الأسماء النكرة المنصوبة بدون استثناء.</p>
                         <div class="space-y-2">
                             <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
-                                <input type="radio" name="q20" value="0" class="hidden" onchange="checkAnswer(20, 0, 0, 'إجابة صحيحة! زِيدت الألف الفارقة في (اقرأ<span class=\'add-highlight\'>و</span>ا) بعد واو الجماعة.')">
-                                أ) إقعدوا
+                                <input type="radio" name="q20" value="0" class="hidden" onchange="checkAnswer(20, 0, 1)">
+                                أ) صح
                             </label>
                             <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
-                                <input type="radio" name="q20" value="1" class="hidden" onchange="checkAnswer(20, 1, 0, 'الواو أصلية في (يدعو).')">
-                                ب) يدعو
-                            </label>
-                            <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
-                                <input type="radio" name="q20" value="2" class="hidden" onchange="checkAnswer(20, 2, 0, 'الألف محذوفة في (لكن).')">
-                                ج) لكن
+                                <input type="radio" name="q20" value="1" class="hidden" onchange="checkAnswer(20, 1, 1)">
+                                ب) خطأ
                             </label>
                         </div>
                         <div class="feedback hidden mt-3 p-3 rounded-lg text-sm font-semibold"></div>
                     </div>
 
+                    <!-- Q21 -->
+                    <div class="question-block bg-slate-50 p-5 rounded-xl border border-slate-200" id="q-box-21">
+                        <p class="font-bold text-lg mb-4 text-slate-800">21. الكلمة التي فيها حرف الواو مزيد خطاً هي:</p>
+                        <div class="space-y-2">
+                            <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
+                                <input type="radio" name="q21" value="0" class="hidden" onchange="checkAnswer(21, 0, 0)">
+                                أ) أولات
+                            </label>
+                            <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
+                                <input type="radio" name="q21" value="1" class="hidden" onchange="checkAnswer(21, 1, 0)">
+                                ب) داوود
+                            </label>
+                            <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
+                                <input type="radio" name="q21" value="2" class="hidden" onchange="checkAnswer(21, 2, 0)">
+                                ج) طاووس
+                            </label>
+                        </div>
+                        <div class="feedback hidden mt-3 p-3 rounded-lg text-sm font-semibold"></div>
+                    </div>
+
+                    <!-- Q22 -->
+                    <div class="question-block bg-slate-50 p-5 rounded-xl border border-slate-200" id="q-box-22">
+                        <p class="font-bold text-lg mb-4 text-slate-800">22. ما السبب الرئيسي لزيادة الواو في اسم (عمرو)؟</p>
+                        <div class="space-y-2">
+                            <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
+                                <input type="radio" name="q22" value="0" class="hidden" onchange="checkAnswer(22, 0, 0)">
+                                أ) للتفريق بينه وبين اسم (عُمَر)
+                            </label>
+                            <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
+                                <input type="radio" name="q22" value="1" class="hidden" onchange="checkAnswer(22, 1, 0)">
+                                ب) لخفة وزن الكلمة
+                            </label>
+                            <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
+                                <input type="radio" name="q22" value="2" class="hidden" onchange="checkAnswer(22, 2, 0)">
+                                ج) لتأكيد التنوين
+                            </label>
+                        </div>
+                        <div class="feedback hidden mt-3 p-3 rounded-lg text-sm font-semibold"></div>
+                    </div>
+
+                    <!-- Q23 -->
+                    <div class="question-block bg-slate-50 p-5 rounded-xl border border-slate-200" id="q-box-23">
+                        <p class="font-bold text-lg mb-4 text-slate-800">23. الكتابة الصحيحة لتنوين كلمة (ماء) بالفتح هي:</p>
+                        <div class="space-y-2">
+                            <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
+                                <input type="radio" name="q23" value="0" class="hidden" onchange="checkAnswer(23, 0, 1)">
+                                أ) ماءاً
+                            </label>
+                            <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
+                                <input type="radio" name="q23" value="1" class="hidden" onchange="checkAnswer(23, 1, 1)">
+                                ب) ماءً
+                            </label>
+                            <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
+                                <input type="radio" name="q23" value="2" class="hidden" onchange="checkAnswer(23, 2, 1)">
+                                ج) ماءن
+                            </label>
+                        </div>
+                        <div class="feedback hidden mt-3 p-3 rounded-lg text-sm font-semibold"></div>
+                    </div>
+
+                    <!-- Q24 -->
+                    <div class="question-block bg-slate-50 p-5 rounded-xl border border-slate-200" id="q-box-24">
+                        <p class="font-bold text-lg mb-4 text-slate-800">24. (صح أم خطأ): الأفعال الخمسة في حالة الرفع تُزاد بعد واوها الألف الفارقة مثل (يكتبوا).</p>
+                        <div class="space-y-2">
+                            <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
+                                <input type="radio" name="q24" value="0" class="hidden" onchange="checkAnswer(24, 0, 1)">
+                                أ) صح
+                            </label>
+                            <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
+                                <input type="radio" name="q24" value="1" class="hidden" onchange="checkAnswer(24, 1, 1)">
+                                ب) خطأ
+                            </label>
+                        </div>
+                        <div class="feedback hidden mt-3 p-3 rounded-lg text-sm font-semibold"></div>
+                    </div>
+
+                    <!-- Q25 -->
+                    <div class="question-block bg-slate-50 p-5 rounded-xl border border-slate-200" id="q-box-25">
+                        <p class="font-bold text-lg mb-4 text-slate-800">25. الألف المزيدة في كلمة (مائة) تُكتب و:</p>
+                        <div class="space-y-2">
+                            <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
+                                <input type="radio" name="q25" value="0" class="hidden" onchange="checkAnswer(25, 0, 0)">
+                                أ) تُكتب ولا تُنطق
+                            </label>
+                            <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
+                                <input type="radio" name="q25" value="1" class="hidden" onchange="checkAnswer(25, 1, 0)">
+                                ب) تُنطق ولا تُكتب
+                            </label>
+                            <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
+                                <input type="radio" name="q25" value="2" class="hidden" onchange="checkAnswer(25, 2, 0)">
+                                ج) تُكتب وتُنطق
+                            </label>
+                        </div>
+                        <div class="feedback hidden mt-3 p-3 rounded-lg text-sm font-semibold"></div>
+                    </div>
+
+                    <!-- Q26 -->
+                    <div class="question-block bg-slate-50 p-5 rounded-xl border border-slate-200" id="q-box-26">
+                        <p class="font-bold text-lg mb-4 text-slate-800">26. "عبر المسافرون الصحراء، و<span class="underline decoration-amber-500 decoration-2">سقوا</span> إبلهم من الواحة". الكلمة المخطوطة تحوي:</p>
+                        <div class="space-y-2">
+                            <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
+                                <input type="radio" name="q26" value="0" class="hidden" onchange="checkAnswer(26, 0, 0)">
+                                أ) ألفاً فارقة زائدة بعد واو الجماعة
+                            </label>
+                            <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
+                                <input type="radio" name="q26" value="1" class="hidden" onchange="checkAnswer(26, 1, 0)">
+                                ب) واواً أصلية بدون ألف فارقة
+                            </label>
+                            <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
+                                <input type="radio" name="q26" value="2" class="hidden" onchange="checkAnswer(26, 2, 0)">
+                                ج) واو جمع المذكر السالم
+                            </label>
+                        </div>
+                        <div class="feedback hidden mt-3 p-3 rounded-lg text-sm font-semibold"></div>
+                    </div>
+
+                    <!-- Q27 -->
+                    <div class="question-block bg-slate-50 p-5 rounded-xl border border-slate-200" id="q-box-27">
+                        <p class="font-bold text-lg mb-4 text-slate-800">27. عند الاستفهام عن مكونات البحيرة العذبة، السؤال الإملائي الصحيح هو:</p>
+                        <div class="space-y-2">
+                            <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
+                                <input type="radio" name="q27" value="0" class="hidden" onchange="checkAnswer(27, 0, 1)">
+                                أ) ممّا تتكون مياه البحيرة؟
+                            </label>
+                            <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
+                                <input type="radio" name="q27" value="1" class="hidden" onchange="checkAnswer(27, 1, 1)">
+                                ب) مِمَّ تتكون مياه البحيرة؟
+                            </label>
+                            <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
+                                <input type="radio" name="q27" value="2" class="hidden" onchange="checkAnswer(27, 2, 1)">
+                                ج) من ما تتكون مياه البحيرة؟
+                            </label>
+                        </div>
+                        <div class="feedback hidden mt-3 p-3 rounded-lg text-sm font-semibold"></div>
+                    </div>
+
+                    <!-- Q28 -->
+                    <div class="question-block bg-slate-50 p-5 rounded-xl border border-slate-200" id="q-box-28">
+                        <p class="font-bold text-lg mb-4 text-slate-800">28. عند إدخال لام الجر على كلمة (المحيط)، تُكتب الكلمة:</p>
+                        <div class="space-y-2">
+                            <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
+                                <input type="radio" name="q28" value="0" class="hidden" onchange="checkAnswer(28, 0, 0)">
+                                أ) للمحيط (بحذف همزة الوصل)
+                            </label>
+                            <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
+                                <input type="radio" name="q28" value="1" class="hidden" onchange="checkAnswer(28, 1, 0)">
+                                ب) لمحيط (بحذف الـ كاملة)
+                            </label>
+                            <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
+                                <input type="radio" name="q28" value="2" class="hidden" onchange="checkAnswer(28, 2, 0)">
+                                ج) اللمحيط (بدون حذف)
+                            </label>
+                        </div>
+                        <div class="feedback hidden mt-3 p-3 rounded-lg text-sm font-semibold"></div>
+                    </div>
+
+                    <!-- Q29 -->
+                    <div class="question-block bg-slate-50 p-5 rounded-xl border border-slate-200" id="q-box-29">
+                        <p class="font-bold text-lg mb-4 text-slate-800">29. "رأيتُ <span class="underline decoration-emerald-500 decoration-2">ظبياً</span> يرعى في المراعي العشبية". الكلمة المخطوطة تنتهي بـ:</p>
+                        <div class="space-y-2">
+                            <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
+                                <input type="radio" name="q29" value="0" class="hidden" onchange="checkAnswer(29, 0, 0)">
+                                أ) ألف تنوين النصب المزيدة خطاً
+                            </label>
+                            <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
+                                <input type="radio" name="q29" value="1" class="hidden" onchange="checkAnswer(29, 1, 0)">
+                                ب) ألف مقصورة أصلية
+                            </label>
+                            <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
+                                <input type="radio" name="q29" value="2" class="hidden" onchange="checkAnswer(29, 2, 0)">
+                                ج) ألف الإطلاق
+                            </label>
+                        </div>
+                        <div class="feedback hidden mt-3 p-3 rounded-lg text-sm font-semibold"></div>
+                    </div>
+
+                    <!-- Q30 -->
+                    <div class="question-block bg-slate-50 p-5 rounded-xl border border-slate-200" id="q-box-30">
+                        <p class="font-bold text-lg mb-4 text-slate-800">30. "حارسو الغابات يحمون الأشجار". كلمة (حارسو) لم تُزد بعدها الألف الفارقة لأنها:</p>
+                        <div class="space-y-2">
+                            <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
+                                <input type="radio" name="q30" value="0" class="hidden" onchange="checkAnswer(30, 0, 1)">
+                                أ) فعل مضارع مرفوع
+                            </label>
+                            <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
+                                <input type="radio" name="q30" value="1" class="hidden" onchange="checkAnswer(30, 1, 1)">
+                                ب) اسم جمع مذكر سالم حُذفت نونه للإضافة
+                            </label>
+                            <label class="option-card block bg-white p-3.5 rounded-lg border border-slate-300 hover:border-teal-600">
+                                <input type="radio" name="q30" value="2" class="hidden" onchange="checkAnswer(30, 2, 1)">
+                                ج) فعل أمر لاتصاله بواو الجماعة
+                            </label>
+                        </div>
+                        <div class="feedback hidden mt-3 p-3 rounded-lg text-sm font-semibold"></div>
+                    </div>
                 </div>
+
             </form>
+
+            <!-- Footer Controls -->
+            <div class="pt-6 border-t border-slate-200 flex flex-col md:flex-row justify-between items-center gap-4">
+                <div class="flex gap-3">
+                    <button onclick="resetQuiz()" class="bg-slate-200 hover:bg-slate-300 text-slate-800 px-5 py-2.5 rounded-xl font-bold transition flex items-center gap-2">
+                        <span>🔄</span> إعادة التدريب
+                    </button>
+                    <button onclick="showAllAnswers()" class="bg-amber-500 hover:bg-amber-600 text-slate-900 px-5 py-2.5 rounded-xl font-bold transition flex items-center gap-2 shadow-md">
+                        <span>💡</span> إظهار الحل والتغذية الراجعة للكل
+                    </button>
+                </div>
+                <div class="text-slate-600 text-sm font-semibold text-center md:text-right">
+                    حقوق الإعداد محفوظة | أ. عبدالعزيز الفيفي
+                </div>
+            </div>
+
         </div>
     </div>
 
-    <!-- Sticky Bottom Score Tracker -->
-    <div class="fixed bottom-0 left-0 right-0 bg-slate-900/95 backdrop-blur-md text-white border-t border-slate-700 shadow-2xl py-3 px-4 z-50">
-        <div class="max-w-4xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-3">
-            <div class="flex items-center gap-6">
-                <div class="text-center">
-                    <span class="text-xs text-slate-400 block">النتيجة</span>
-                    <span class="text-xl font-bold text-amber-400"><span id="score">0</span> من 20</span>
-                </div>
-                <div class="h-8 w-px bg-slate-700"></div>
-                <div class="text-center">
-                    <span class="text-xs text-slate-400 block">النسبة المئوية</span>
-                    <span class="text-xl font-bold text-teal-400" id="percentage">0%</span>
-                </div>
-            </div>
-            
-            <!-- Progress Bar -->
-            <div class="w-full sm:w-64 bg-slate-800 rounded-full h-3 overflow-hidden border border-slate-700">
-                <div id="progressFill" class="bg-gradient-to-r from-teal-500 to-amber-500 h-full w-0 transition-all duration-300"></div>
-            </div>
+    <!-- Sticky Live Score Bar -->
+    <div class="fixed bottom-0 left-0 right-0 bg-slate-900/95 backdrop-blur-md text-white p-4 border-t-2 border-amber-500 shadow-2xl flex justify-around items-center max-w-4xl mx-auto rounded-t-2xl z-50">
+        <div class="text-center">
+            <div class="text-xs text-slate-400">النتيجة الحالية</div>
+            <div class="text-2xl font-extrabold text-amber-400"><span id="score">0</span> / 30</div>
+        </div>
+        <div class="h-8 w-px bg-slate-700"></div>
+        <div class="text-center">
+            <div class="text-xs text-slate-400">النسبة المئوية</div>
+            <div class="text-2xl font-extrabold text-teal-400"><span id="percentage">0</span>%</div>
         </div>
     </div>
 
     <script>
-        const totalQuestions = 20;
-        let userAnswers = {};
-        let score = 0;
+        const TOTAL_QUESTIONS = 30;
+        const userAnswers = new Array(TOTAL_QUESTIONS + 1).fill(false);
+        const correctAnswers = {
+            1: 1, 2: 1, 3: 0, 4: 1, 5: 0, 
+            6: 0, 7: 1, 8: 0, 9: 0, 10: 0,
+            11: 0, 12: 2, 13: 0, 14: 1, 15: 1,
+            16: 1, 17: 0, 18: 1, 19: 1, 20: 1,
+            21: 0, 22: 0, 23: 1, 24: 1, 25: 0,
+            26: 0, 27: 1, 28: 0, 29: 0, 30: 1
+        };
 
-        function checkAnswer(qNum, selectedOpt, correctOpt, feedbackMsg) {
-            const qBox = document.getElementById(`q-box-${qNum}`);
-            const feedbackEl = qBox.querySelector('.feedback');
-            const labels = qBox.querySelectorAll('label');
+        const explanations = {
+            1: 'إجابة صحيحة! كلمة (الرحمـ<span class="del-highlight">ا</span>ن) حُذفت منها الألف خطاً وبقيت في اللفظ.',
+            2: 'إجابة صحيحة! تُحذف (<span class="del-highlight">الـ</span>لغة ⬅️ للغة) بأكملها تجنباً لتتالي ثلاث لامات.',
+            3: 'إجابة صحيحة! اسم الإشارة (هـ<span class="del-highlight">ا</span>ذا) حُذفت منه الألف خطاً وبقيت لفظاً.',
+            4: 'إجابة صحيحة! تُحذف الياء من الاسم المنقوص النكرة في الرفع والجر (قاضـ<span class="del-highlight">ي</span> ⬅️ قاضٍ).',
+            5: 'إجابة صحيحة! (لا تدعُ) حُذفت الواو منها للعادة الجزم بـ لا الناهية (تدعـ<span class="del-highlight">و</span> ⬅️ تدعُ).',
+            6: 'إجابة صحيحة! تُحذف ألف (ابن) بشرط وقوعها مفردة بين علمين الثاني أب للأول وعلى سطر واحد (عمر بن الخطاب).',
+            7: 'إجابة صحيحة! العبارة خاطئة؛ فالواو هي الزائدة خطاً لا لفظاً (أ<span class="add-highlight">و</span>لئك)، بينما الألف محذوفة خطاً لا لفظاً.',
+            8: 'إجابة صحيحة! أصلها (عـ<span class="del-highlight">ن</span> + مّا = عمّا) حُذفت النون خطاً ولفظاً للإدغام.',
+            9: 'إجابة صحيحة! لفظ الجلالة (اللـ<span class="del-highlight">ا</span>ه) حُذفت الألف فيه خطاً وبقيت لفظاً.',
+            10: 'إجابة صحيحة! أصلها (قـ<span class="del-highlight">ا</span>ل ⬅️ قُل) حُذفت الألف لمنع التقاء الساكنين.',
+            11: 'إجابة صحيحة! عند دخول لام الجر على كلمة غير مبدوءة بلام تُحذف همزة الوصل فقط (<span class="del-highlight">ا</span>لكتاب ⬅️ للكتاب).',
+            12: 'إجابة صحيحة! التركيبة الخاطئة هي (بما كتبت) والصواب الإملائي هو حذف الألف (بِمَ كتبت؟).',
+            13: 'إجابة صحيحة! تُحذف ألف (ما) الاستفهامية وجوباً عند اتّصالها بحرف الجر (على + ما ⬅️ علاَمَ).',
+            14: 'إجابة صحيحة! العبارة خاطئة؛ تُحذف ألف (ما) الاستفهامية وجوباً عند اتّصالها بحرف الجر (عَمَّ، فِيمَ).',
+            15: 'إجابة صحيحة! (عن + ما ⬅️ عَمَّ) تُدغم النون وتُحذف ألف ما الاستفهامية.',
+            16: 'إجابة صحيحة! تُسمى بالألف الفارقة لأنها تفرّق بين واو الجماعة والواو الأصلية أو واو الجمع.',
+            17: 'إجابة صحيحة! (كتبـو<span class="add-highlight">ا</span>) حوى واو الجماعة فزِيدت بعده الألف الفارقة.',
+            18: 'إجابة صحيحة! تُزاد الواو في (عمـر<span class="add-highlight">و</span>) رفعاً وجراً للتفريق بينها وبين (عُمَر).',
+            19: 'إجابة صحيحة! (معلمو) جمع مذكر سالم حُذفت نونه للإضافة ولا تُزاد بعده ألف فارقة.',
+            20: 'إجابة صحيحة! العبارة خاطئة؛ تُستثنى الكلمات المنتهية بتاء مربوطة (مدرسةً) أو همزة قبلها ألف (ماءً) أو ألف مقصورة.',
+            21: 'إجابة صحيحة! كلمة (أ<span class="add-highlight">و</span>لات) زِيدت فيها الواو خطاً لا لفظاً.',
+            22: 'إجابة صحيحة! زِيدت الواو للتفرقة بين (عمرو) و(عُمَر).',
+            23: 'إجابة صحيحة! لا تُزاد الألف بعد الهمزة المتطرفة إذا كانت مسبوقة بألف (ماءً).',
+            24: 'إجابة صحيحة! العبارة خاطئة؛ لأن الأفعال الخمسة المرفوعة تنتهي بنون ثبوت الإعراب (يكتبون).',
+            25: 'إجابة صحيحة! الألف في (مـ<span class="add-highlight">ا</span>ئة) زِيدت قديماً للتفريق بينها وبين (منة).',
+            26: 'إجابة صحيحة! (سقـو<span class="add-highlight">ا</span>) احتوت على الألف الفارقة بعد واو الجماعة.',
+            27: 'إجابة صحيحة! (مِن + ما ⬅️ مِمَّ) تُدغم النون وتُحذف ألف (ما) الاستفهامية وجوباً.',
+            28: 'إجابة صحيحة! لـ + الـ + محيط = لِلمحيط (تُحذف همزة الوصل فقط لأن الكلمة لا تبدأ بلام).',
+            29: 'إجابة صحيحة! زِيدت ألف تنوين النصب في آخر الاسم المنصوب (ظبـ<span class="add-highlight">ياً</span>).',
+            30: 'إجابة صحيحة! (حارسو) اسم جمع مذكر سالم حُذفت نونه للإضافة، والألف الفارقة تختص بالأفعال فقط.'
+        };
 
-            labels.forEach((lbl, idx) => {
-                lbl.classList.remove('bg-emerald-100', 'border-emerald-500', 'text-emerald-900', 'bg-rose-100', 'border-rose-500', 'text-rose-900');
-                if(idx === selectedOpt) {
-                    if(selectedOpt === correctOpt) {
-                        lbl.classList.add('bg-emerald-100', 'border-emerald-500', 'text-emerald-900');
+        function checkAnswer(qNum, selectedOption, correctOption) {
+            const box = document.getElementById(`q-box-${qNum}`);
+            const feedback = box.querySelector('.feedback');
+            const options = box.querySelectorAll('label');
+
+            options.forEach((opt, idx) => {
+                opt.classList.remove('bg-teal-50', 'border-teal-500', 'bg-rose-50', 'border-rose-500');
+                if (idx === selectedOption) {
+                    if (selectedOption === correctOption) {
+                        opt.classList.add('bg-teal-50', 'border-teal-500');
                     } else {
-                        lbl.classList.add('bg-rose-100', 'border-rose-500', 'text-rose-900');
+                        opt.classList.add('bg-rose-50', 'border-rose-500');
                     }
-                }
-                if(idx === correctOpt && selectedOpt !== correctOpt) {
-                    lbl.classList.add('bg-emerald-50', 'border-emerald-400');
                 }
             });
 
-            feedbackEl.classList.remove('hidden', 'bg-emerald-100', 'text-emerald-800', 'bg-rose-100', 'text-rose-800');
-            if(selectedOpt === correctOpt) {
-                feedbackEl.classList.add('bg-emerald-100', 'text-emerald-800');
+            feedback.classList.remove('hidden', 'bg-teal-100', 'text-teal-900', 'bg-rose-100', 'text-rose-900');
+            if (selectedOption === correctOption) {
+                feedback.classList.add('bg-teal-100', 'text-teal-900');
+                feedback.innerHTML = `✅ ${explanations[qNum]}`;
+                userAnswers[qNum] = true;
             } else {
-                feedbackEl.classList.add('bg-rose-100', 'text-rose-800');
+                feedback.classList.add('bg-rose-100', 'text-rose-900');
+                feedback.innerHTML = `❌ إجابة خاطئة! ${explanations[qNum]}`;
+                userAnswers[qNum] = false;
             }
-            feedbackEl.innerHTML = feedbackMsg;
 
-            const isCorrect = (selectedOpt === correctOpt);
-            userAnswers[qNum] = isCorrect;
-
-            calculateScore();
+            updateScore();
         }
 
-        function calculateScore() {
-            score = 0;
-            let answeredCount = 0;
-            for(let key in userAnswers) {
-                answeredCount++;
-                if(userAnswers[key] === true) {
-                    score++;
+        function showAllAnswers() {
+            for (let qNum = 1; qNum <= TOTAL_QUESTIONS; qNum++) {
+                const correctIdx = correctAnswers[qNum];
+                const box = document.getElementById(`q-box-${qNum}`);
+                const radios = box.querySelectorAll('input[type="radio"]');
+                
+                if (radios[correctIdx]) {
+                    radios[correctIdx].checked = true;
+                    checkAnswer(qNum, correctIdx, correctIdx);
                 }
             }
+        }
 
-            document.getElementById('score').innerText = score;
-            const percent = Math.round((score / totalQuestions) * 100);
-            document.getElementById('percentage').innerText = `${percent}%`;
+        function updateScore() {
+            let totalCorrect = 0;
+            for (let i = 1; i <= TOTAL_QUESTIONS; i++) {
+                if (userAnswers[i]) totalCorrect++;
+            }
+            document.getElementById('score').innerText = totalCorrect;
+            document.getElementById('percentage').innerText = Math.round((totalCorrect / TOTAL_QUESTIONS) * 100);
+        }
 
-            const progressWidth = (answeredCount / totalQuestions) * 100;
-            document.getElementById('progressFill').style.width = `${progressWidth}%`;
+        function resetQuiz() {
+            document.getElementById('quizForm').reset();
+            userAnswers.fill(false);
+            updateScore();
+            
+            document.querySelectorAll('.feedback').forEach(f => f.classList.add('hidden'));
+            document.querySelectorAll('.option-card').forEach(card => {
+                card.classList.remove('bg-teal-50', 'border-teal-500', 'bg-rose-50', 'border-rose-500');
+            });
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
     </script>
 </body>
